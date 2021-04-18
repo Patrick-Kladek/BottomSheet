@@ -280,7 +280,11 @@ private extension BottomSheetView {
 
   static func makeContentView() -> UIView {
     let view = UIView()
-    view.backgroundColor = .systemBackground
+    if #available(iOS 13.0, *) {
+        view.backgroundColor = .systemBackground
+    } else {
+        view.backgroundColor = .white
+    }
     return view
   }
 }
