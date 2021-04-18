@@ -267,8 +267,7 @@ public extension BottomSheetView {
 
 private extension BottomSheetView {
   static func styleBottomSheet(_ view: BottomSheetView) {
-    view.backgroundColor = .clear
-    view.isOpaque = false
+    view.backgroundColor = .systemBackground
     view.setNeedsDisplay()
   }
   
