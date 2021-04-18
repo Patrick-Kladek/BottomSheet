@@ -267,8 +267,7 @@ public extension BottomSheetView {
 
 private extension BottomSheetView {
   static func styleBottomSheet(_ view: BottomSheetView) {
-    view.backgroundColor = .systemBackground
-    view.setNeedsDisplay()
+    view.isOpaque = false
   }
   
   static func styleDragHandle(_ view: UIView, with color: UIColor?) {
