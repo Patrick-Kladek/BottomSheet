@@ -15,6 +15,7 @@
 		9B42EB9B256A7FFE00C7448D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42EB9A256A7FFE00C7448D /* View.swift */; };
 		9B42EB9F256A801A00C7448D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42EB9E256A801A00C7448D /* ViewModel.swift */; };
 		9B42EBA5256A803F00C7448D /* ExampleBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42EBA4256A803F00C7448D /* ExampleBottomSheetView.swift */; };
+		CDD39D39262CA7AA0090B5BC /* ExampleContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD39D38262CA7AA0090B5BC /* ExampleContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9B42EB9A256A7FFE00C7448D /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		9B42EB9E256A801A00C7448D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9B42EBA4256A803F00C7448D /* ExampleBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBottomSheetView.swift; sourceTree = "<group>"; };
+		CDD39D38262CA7AA0090B5BC /* ExampleContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				9B42EB96256A7FD300C7448D /* ViewController.swift */,
 				9B42EB9A256A7FFE00C7448D /* View.swift */,
 				9B42EB9E256A801A00C7448D /* ViewModel.swift */,
+				CDD39D38262CA7AA0090B5BC /* ExampleContentViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				9B42EB9B256A7FFE00C7448D /* View.swift in Sources */,
 				9B42EB97256A7FD300C7448D /* ViewController.swift in Sources */,
 				9B42EB75256A7DB400C7448D /* AppDelegate.swift in Sources */,
+				CDD39D39262CA7AA0090B5BC /* ExampleContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

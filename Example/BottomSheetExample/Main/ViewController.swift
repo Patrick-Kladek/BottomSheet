@@ -31,7 +31,8 @@ final class ViewController: UIViewController {
   }
   
   @objc private func didPressButton(_ sender: UIButton) {
-    let controller = BottomSheetViewController(contentView: ExampleBottomSheetView())
+//    let controller = BottomSheetViewController(contentView: ExampleBottomSheetView())
+    let controller = BottomSheetViewController(viewController: ExampleContentViewController())
     controller.sheetCornerRadius = 32
     controller.sheetSizingStyle = viewModel.selectedSheetSizingStyle
     controller.handleStyle = viewModel.selectedHandleStyle

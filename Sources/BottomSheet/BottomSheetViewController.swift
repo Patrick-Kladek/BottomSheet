@@ -58,6 +58,23 @@ open class BottomSheetViewController: UIViewController {
     
     setup()
   }
+
+  public convenience init(viewController child: UIViewController) {
+    self.init(nibName: nil, bundle: nil)
+
+    self.addChild(child)
+    self.contentView = child.view
+//    child.view.translatesAutoresizingMaskIntoConstraints = false
+//    NSLayoutConstraint.activate([
+//        child.view.topAnchor.constraint(equalTo: self.contentView.topAnchor),
+//        child.view.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
+//        child.view.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
+//        child.view.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor)
+//    ])
+    child.didMove(toParent: self)
+
+    setup()
+  }
   
   public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

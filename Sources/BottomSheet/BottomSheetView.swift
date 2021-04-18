@@ -99,7 +99,7 @@ public final class BottomSheetView: UIView {
   }()
   
   /// The content of the bottom sheet. Assign your view to this variable to set a custom content.
-  public var contentView: UIView = UIView() {
+  public var contentView: UIView = makeContentView() {
     didSet {
       oldValue.removeFromSuperview()
       addSubview(contentView)
@@ -276,6 +276,12 @@ private extension BottomSheetView {
     } else {
       view.backgroundColor = color ?? .groupTableViewBackground
     }
+  }
+
+  static func makeContentView() -> UIView {
+    let view = UIView()
+    view.backgroundColor = .systemBackground
+    return view
   }
 }
 
