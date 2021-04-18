@@ -12,9 +12,7 @@ final class ExampleBottomSheetView: UIView {
   // MARK: - UI Elements
   
   let titleLabel = UILabel()
-  
   let descriptionLabel = UILabel()
-  
   let button = UIButton(type: .system)
   
   lazy var contentStack: UIStackView = {
